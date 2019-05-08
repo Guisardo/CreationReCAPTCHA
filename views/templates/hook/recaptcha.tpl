@@ -23,6 +23,6 @@
 <div class="account_creation">
     <div class="form-group">
         <label>{$creationrecaptcha_label|escape:'htmlall':'UTF-8'}</label>
-        <div class="g-recaptcha" data-callback="unlockSubmit" data-sitekey='{$creationrecaptcha_key|escape:'htmlall':'UTF-8'}'></div>
+        <div class="g-recaptcha" {if $creationrecaptcha_subdisable}data-callback="unlockSubmit"{/if} data-sitekey='{$creationrecaptcha_key|escape:'htmlall':'UTF-8'}'></div>
     </div>
 </div>  
